@@ -1,0 +1,405 @@
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+@font-face {
+    font-family: 'droid-bold';
+    src: url('/fonts/DroidSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'droid';
+    src: url('/fonts/DroidSans.ttf');
+}
+@font-face {
+    font-family: 'droid-serif-bold';
+    src: url('/fonts/DroidSerif-Bold.ttf');
+}
+@font-face {
+    font-family: 'droid-serif-bold-italic';
+    src: url('/fonts/DroidSerif-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'droid-serif-italic';
+    src: url('/fonts/DroidSerif-Italic.ttf');
+}
+@font-face {
+    font-family: 'droid-serif';
+    src: url('/fonts/DroidSerif.ttf');
+}
+@font-face {
+    font-family: 'lato-black';
+    src: url('/fonts/Lato-Black.ttf');
+}
+@font-face {
+    font-family: 'lato-black-italic';
+    src: url('/fonts/Lato-BlackItalic.ttf');
+}
+@font-face {
+    font-family: 'lato-bold';
+    src: url('/fonts/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: 'lato-bold-italic';
+    src: url('/fonts/Lato-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'lato-hairline';
+    src: url('/fonts/Lato-Hairline.ttf');
+}
+@font-face {
+    font-family: 'lato-hairline-italic';
+    src: url('/fonts/Lato-HairlineItalic.ttf');
+}
+@font-face {
+    font-family: 'lato-italic';
+    src: url('/fonts/Lato-Italic.ttf');
+}
+@font-face {
+    font-family: 'lato-light';
+    src: url('/fonts/Lato-Light.ttf');
+}
+@font-face {
+    font-family: 'lato-light-italic';
+    src: url('/fonts/Lato-LightItalic.ttf');
+}
+@font-face {
+    font-family: 'lato-regular';
+    src: url('/fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'lato-heavy';
+    src: url('/fonts/Lato-Heavy.ttf');
+}
+
+nav{
+    border-bottom: .5px solid gray ;
+}
+.fa-truck{
+    font-size: 25px;
+}
+.navbar-brand {
+    font-family: 'droid-bold';
+    font-size: 34px;
+}
+.nav-item {
+    font-family: 'droid-serif-italic';
+}
+.header-part {
+    padding-top: 50px;
+    background-image: url("/img/test-homepage-design.png");
+}
+.header-part .title{
+    text-align: center;
+    color: #21314e;
+    font-family: 'lato-heavy';
+    text-transform: uppercase;
+    font-size: 70px;
+}
+.header-part p {
+    color: #d03536;
+    text-align: center;
+    font-size: 29px;
+    font-family: 'lato-light-italic';
+}
+.clocks {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container-day,
+.container-hour,
+.container-minute,
+.container-second
+{
+    margin: 0 20px;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-family: 'lato-black-italic';
+}
+.clocks .names{
+    font-size: 12px;
+}
+.clocks h3 {
+    font-size: 30px;
+    color: #d03536;
+    font-weight: bold;
+}
+.clock-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.clock-buttons button {
+    margin-right: 10px;
+    height: 44px;
+    width: 200px;
+    background-color: #21314e;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'lato-bold';
+    border: none;
+    transition: all ease 1s;
+}
+.clock-buttons button:hover{
+    background-color: rgba(15, 58, 111, 0.895);
+}
+.festive-pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.festive-pics .container img{
+    transition: all ease 1s;
+}
+.festive-pics .container img:hover{
+    transform: scale(1.05);
+}
+.festive-pics h4{
+    font-size: 34px;
+    text-align: center;
+    margin: 20px;
+    font-family: 'droid-serif';
+}
+
+.festive-pics p {
+    font-size: 20px;
+    font-family: 'lato-bold-italic';
+}
+.festive-pics a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: 'lato-bold';
+    transition: all ease .8s;
+}
+.festive-pics a:hover {
+    color: rgba(15, 58, 111, 0.895);
+}
+.package-img{
+    position: relative;
+}
+.package{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url("/img/layer-124.png");
+}
+.package span {
+    display: flex;
+}
+.package span h5 {
+    margin: 0px 5px;
+}
+.new {
+    width: 58px;
+    height: 30px;
+    background-color: #3d7dca;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 20;
+}
+.gifts {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gift-pic {
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+.gift-pic:hover {
+    transform: scale(1.05);
+}
+.gifts h4 {
+    font-size: 34px;
+    text-align: center;
+    margin: 60px;
+    font-family: 'droid-serif';
+}
+.gifts button {
+    width: 368px;
+    height: 45px;
+    background-color: #21314e;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border: none;
+    transition: all ease 1s;
+    text-transform: uppercase;
+}
+.gifts button:hover{
+    background-color: rgba(15, 58, 111, 0.895);
+}
+.gift-card-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.left-card h2 {
+    font-family: 'droid-serif';
+    font-size: 40px;
+    color: #21314e;
+}
+.left-card button {
+    width: 200px;
+    height: 40px;
+    background-color: #21314e;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin: 20px;
+    transition: all ease 1s;
+}
+.left-card button:hover{
+    background-color: rgba(15, 58, 111, 0.895);
+}
+.right-card img{
+    transition: all ease 1s;
+}
+.right-card img:hover {
+    animation: shake .75s;
+}
+.card-text-area {
+    background-color: #21314e;
+    color: white;
+    width: 1021px;
+    height: 202px;
+}
+.delivery-card {
+    margin: 250px;
+}
+.delivery-card h5{
+    font-family: 'droid-serif';
+    font-size: 25px;
+}
+.delivery-card p {
+    font-size: 19px;
+    font-family: 'lato-light-italic';
+}
+.delivery-card-section {
+    position: relative;
+}
+.card-image-area {
+    padding-bottom: 70px;
+}
+.card-text-area,
+.card-image-area{
+    position: absolute;
+}
+button i {
+    margin-left: 10px;
+    font-size: 10px;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer h2 {
+    font-family: 'droid-serif-bold';
+    font-size: 30px;
+    color: black;
+}
+.stick {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+@media only screen and (max-width: 850px){
+    .header-part .title{
+        text-align: center;
+        font-size: 40px;
+    }
+    .header-part p {
+        font-size: 20px;
+    }
+    .gifts button {
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .left-card h2 {
+        font-size: 25px;
+    }
+    .card-text-area {
+        width: 750px;
+        height: 202px;
+    }
+    .card-image-area img{
+        width: 758px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .delivery-card .card-text-area {
+        width: 280px;
+        height: 202px;
+    }
+    .card-image-area img{
+        width: 300px;
+        height: 281px;
+    }
+    .delivery-card h5{
+        font-size: 20px;
+    }
+    .delivery-card p {
+        font-size: 15px;
+    }
+    .right-card img{
+        width: 200px;
+        height: 150px;
+    }
+    .footer h2 {
+        font-size: 15px;
+    }   
+}
+
+@media only screen and (width: 320px){
+
+    .header-part .title{
+        font-size: 30px;
+    }
+    .festive-pics .container img{
+        width: 220px;
+    }
+    .gift-pic{
+        width: 220px;
+    }
+    .gifts button {
+        width: 180px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
